@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my portfolio</title>
+	 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<style type="text/css">
+		
+		body{
+			  background-color: rgba(19,19,19,1.0);
+			  font: 28px Montserrat, Helvetica, Arial, serif;
+
+		}
+
+		 *{
+    		margin: 0;
+    		padding: 0;
+    		list-style: none;
+    		text-decoration: none;
+    	
+    	}
+
+        
+        .img{
+        	  width: 25%;
+        	  border-radius: 50%;
+
+
+        }
+
+        .tm{
+        	 text-align: center;
+        }
+
+        .hello{
+        	color: white;
+        	font-size: 2.5em;
+        	font-weight: 700;
+        	text-align: center;
+        }
+
+        span{
+        	  color:rgb(255, 51, 153);
+        }
+
+        header{
+    		height: 90px;
+    		background-color:#fff;
+    		opacity: 0.5;
+    	}
+
+    	nav{
+    		height: 90px;
+    		background-color:#fff;
+    		opacity: 0.5;
+    	}
+    	nav img{
+    		width: 150px;
+    		position:absolute;
+    		top: 0px;
+    		left:12%;
+
+    	}
+    	nav ul{
+    		float:right;
+    		margin-right: 25px;
+           
+    	}
+    	nav ul li{
+    		display:inline-block;
+    		line-height: 89px;
+    		margin: 0 15px;
+
+    
+    	}
+
+    	nav ul li a{
+    		position: relative;
+    		color:rgb(255, 51, 204);
+    		font-size: 18px;
+    		padding: 5px 0;
+    		text-transform: uppercase;
+    		
+            
+    	}
+
+    	
+    	nav ul li a:hover{
+		color: black;
+		
+	}
+
+    	nav ul li a:before{
+    		 position: absolute;
+    		 content: '';
+    		 left: 0;
+    		 bottom:0;
+    		 height: 3px;
+    		 width: 100%;
+    		 background:black;
+    		 transform: scaleX(0);
+    		 transform-origin: right;
+             transition: transform .4s linear
+    	}
+    	nav ul li a:hover:before{
+                 transform:scaleX(1);
+                 transform-origin: left;
+    	} 
+    	label #btn,
+        label #cancel{
+   	    color: black;
+   	    font-size: 30px;
+   	    float: right;
+   	    line-height: 89px;
+   	    margin-right: 40px;
+   	    cursor: pointer;
+   	    display: none;
+
+   }
+     #check{
+   	  display: none;
+
+   }
+
+   @media (max-width: 1118px){
+   	   nav img {
+   	   	  left:8%;
+
+   	   }
+   }
+   @media (max-width: 944px){
+   	   nav img {
+   	   	  left:8%;
+   	   	  width: 130px;
+
+   	   }
+   	   nav ul li a{
+   	   	  font-size: 17px;
+   	   }
+   }
+   
+   
+ 
+     @media (max-width: 860px){
+
+        
+     	 nav img {
+   	   	  left:6%;
+   	   	  width: 130px;
+
+   	   }
+   	   nav ul li a{ 
+   	   	  font-size: 17px;
+   	   	  font-weight: 800;
+   	   }
+           label #btn{
+           	   display: block;
+
+           }
+            ul{
+           	position: fixed;
+           	width:100%;
+            height: 100vh;
+             background : white;
+            opacity: 1;
+           	top: 80px;
+           	left: -100%;
+           	text-align: center;
+           	transition: all .5s;
+           	
+            
+
+
+           }
+           nav ul li{
+           	   display: block;
+           	   margin:50px 0;
+           	   line-height: 30px;
+           }
+            nav ul li a{
+           	   font-size: 1.2em;
+           }
+           #check:checked ~ ul{
+                  left: 0;
+           }
+           #check:checked ~ label #btn{
+           	    display: none;
+           }
+           #check:checked ~ label #cancel{
+           	  display: block;
+
+           } 
+
+    
+   }
+
+
+        .exp{
+        	     color: white;
+        	     /*width: 20%;*/
+        	     text-align: center;
+
+        }
+
+        .d{
+             text-align: center;
+            /* margin-left: 43%;*/
+        }
+
+        .wrapper{
+        	      display: grid;
+        	      grid-template-rows: repeat(3, 1fr);
+        	      padding-left: 1em;
+        	      padding-right:2em;
+        	      grid-gap: 1.5em;
+        	      text-align: center;
+        	      font-weight: 600;
+
+        }
+       
+
+        .wrapper > div{
+        	            background-color: #eee;
+        	            padding: 1em;
+        	            border-radius: 1em;
+
+
+        }
+
+
+        .iitkgp{
+        	     text-decoration: none;
+        	     color:rgb(255, 51, 153);
+        	     font-size: 1.3em;
+                
+        }
+
+        .snig{
+
+        	     text-decoration: none;
+        	     color:rgb(255, 51, 153);
+        	     font-size: 1.3em;
+        }
+
+        .snig p{
+
+        	     margin:0;
+        	     padding: 0;
+        }
+
+         .iitkgp p{
+
+        	     margin:0;
+        	     padding: 0;
+        }
+
+
+	  	
+	</style>
+</head>
+<body>
+   
+    <header>
+	<nav>
+		 <input type="checkbox" id="check">
+		 <label for="check">
+		 	<i class="fas fa-bars" id="btn"></i>
+		 	<i class="fas fa-times" id="cancel"></i>
+		 </label> 
+		 <img src="lgo.jpg" />
+
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="experiences.html">experiences</a></li>
+			<li><a href="interests.html">interest</a></li>
+			<li><a href="contact.html">contacts</a></li>
+		</ul>
+	</nav></header>
+    <div >
+	       <p class="hello"><br><br> <span> Hello </span> everyone!<br>
+	        And<br>
+	        Welcome to my<br>
+	        <span >Portfolio</span>
+	        </p><br>
+	</div>
+           <div class="tm"><img class="img charu" src="4v.jpg"></div><br>
+    <div class="d">   <h2 class="animate__animated animate__bounce animate__delay-2s animate__repeat-3 3 exp">AboutMe</h2> </div><br>
+	
+	<div class="wrapper">
+		
+		<div>
+			I am from the border of Sarojini Naidu and Indira Gandhi hall of residence.<br><a class="snig" href="https://wiki.metakgp.org/w/Sarojini_Naidu_/_Indira_Gandhi_Hall_of_Residence"> <p class="animate__animated animate__pulse animate__delay-2s animate__repeat-3 3" >SN/IG</p></a>
+		</div>
+		<div>
+			I am pursuing my dual degree in chemical engineering from<br> <a class="iitkgp" href="http://www.iitkgp.ac.in/"> <p class="animate__animated animate__pulse animate__delay-2s animate__repeat-3 3" >IIT Kharagpur</p></a>
+		</div>
+		<div>
+			I live in Barmer which is situated in western part of Rajasthan.Fb page of <a class="iitkgp" href="https://www.facebook.com/RCA.IITKGP/"> <p class="animate__animated animate__pulse animate__delay-2s animate__repeat-3 3" > RCA</p></a>
+		</div><br>
+
+
+	</div>        
+	       
+    
+</body>
+</html>

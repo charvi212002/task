@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My interests</title>
+	 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<style type="text/css">
+
+		  *{
+    		margin: 0;
+    		padding: 0;
+    		list-style: none;
+    		text-decoration: none;
+    	
+    	}
+
+         body{
+			 /* background-color: rgb(20, 1, 48);*/
+			   background-color: rgba(19,19,19,1.0);
+			  font: 28px Montserrat, Helvetica, Arial, serif;
+
+		}
+
+
+
+  
+	header{
+    		height: 90px;
+    		background-color:#fff;
+    		opacity: 0.5;
+    	}
+
+    	nav{
+    		height: 90px;
+    		background-color:#fff;
+    		opacity: 0.5;
+    	}
+    	nav img{
+    		width: 150px;
+    		position:absolute;
+    		top: 0px;
+    		left:12%;
+
+    	}
+    	nav ul{
+    		float:right;
+    		margin-right: 25px;
+           
+    	}
+    	nav ul li{
+    		display:inline-block;
+    		line-height: 89px;
+    		margin: 0 15px;
+
+    
+    	}
+
+    	nav ul li a{
+    		position: relative;
+    		color:rgb(255, 51, 204);
+    		font-size: 18px;
+    		padding: 5px 0;
+    		text-transform: uppercase;
+    		
+            
+    	}
+
+    	
+    	nav ul li a:hover{
+		color: black;
+		
+	}
+
+    	nav ul li a:before{
+    		 position: absolute;
+    		 content: '';
+    		 left: 0;
+    		 bottom:0;
+    		 height: 3px;
+    		 width: 100%;
+    		 background:black;
+    		 transform: scaleX(0);
+    		 transform-origin: right;
+             transition: transform .4s linear
+    	}
+    	nav ul li a:hover:before{
+                 transform:scaleX(1);
+                 transform-origin: left;
+    	} 
+    	label #btn,
+        label #cancel{
+   	    color: black;
+   	    font-size: 30px;
+   	    float: right;
+   	    line-height: 89px;
+   	    margin-right: 40px;
+   	    cursor: pointer;
+   	    display: none;
+
+   }
+     #check{
+   	  display: none;
+
+   }
+
+   @media (max-width: 1118px){
+   	   nav img {
+   	   	  left:8%;
+
+   	   }
+   }
+   @media (max-width: 944px){
+   	   nav img {
+   	   	  left:8%;
+   	   	  width: 130px;
+
+   	   }
+   	   nav ul li a{
+   	   	  font-size: 17px;
+   	   }
+   }
+   
+   
+ 
+     @media (max-width: 860px){
+
+         
+     	 nav img {
+   	   	  left:6%;
+   	   	  width: 130px;
+
+   	   }
+   	   nav ul li a{ 
+   	   	  font-size: 17px;
+   	   	  font-weight: 800;
+   	   }
+           label #btn{
+           	   display: block;
+
+           }
+            ul{
+           	position: fixed;
+           	width:100%;
+            height: 100vh;
+             background : white;
+            opacity: 1;
+           	top: 80px;
+           	left: -100%;
+           	text-align: center;
+           	transition: all .5s;
+           	
+            
+
+
+           }
+           nav ul li{
+           	   display: block;
+           	   margin:50px 0;
+           	   line-height: 30px;
+           }
+            nav ul li a{
+           	   font-size: 1.2em;
+           }
+           #check:checked ~ ul{
+                  left: 0;
+           }
+           #check:checked ~ label #btn{
+           	    display: none;
+           }
+           #check:checked ~ label #cancel{
+           	  display: block;
+           }
+
+
+   }
+
+
+    .int{
+    	  text-align: center;
+    	  font-weight: 800;
+    	  font-size: 1.5em;
+    	  color: #fff;
+    }
+
+     .wrapper{
+        	      display: grid;
+        	      grid-template-rows:3fr 2fr;
+        	      padding-left: 1em;
+        	      padding-right:2em;
+        	      grid-gap: 1.8em;
+        	      text-align: center;
+        	     
+
+        }
+
+        .wrapper > div{
+        	            background-color: #eee;
+        	            padding: 1em;
+        	            border-radius: 1em;
+        	         }
+         .read{
+
+        	     text-decoration: none;
+        	     color:rgb(255, 51, 153);
+        	     font-size: 1.3em;
+        	     padding-bottom: 0.5em;
+        }
+
+
+        
+
+
+	</style>
+</head>
+<body>
+ 
+</head>
+<body>
+	   <header>
+	<nav>
+		 <input type="checkbox" id="check">
+		 <label for="check">
+		 	<i class="fas fa-bars" id="btn"></i>
+		 	<i class="fas fa-times" id="cancel"></i>
+		 </label> 
+		 <img src="lgo.jpg" />
+
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="experiences.html">experiences</a></li>
+			<li><a href="interests.html">interest</a></li>
+			<li><a href="contact.html">contacts</a></li>
+		</ul>
+	</nav></header>
+	   <br><br><br><br>
+      <div class="int"><h1 class="animate__animated animate__pulse animate__delay-2s animate__repeat-3 3 exp">MY INTERESTS</h1></div><br>
+      <div class="wrapper">
+		
+		<div>
+			<h3 class="read">Reading</h3>
+			<p>I am a enthusiastic learner.I keep on following new things.I recently acquired my interest in reading.I have read many novels,among which <b>The Alchemist, Shiva Trilogy-The Immortals of Meluha,The girl on the train</b>,are my favourite one's.I read all variety of books from Indian mythology to greatest science fiction and classical romance.</p>
+		</div>
+		<div>
+			<h3 class="read">Sports</h3>
+			I have a certion amount of interest in all the outdoor games.Most likely I would prefer playing <b>Badminton</b>.
+			Among indoors games, I enjoy playing <b>chess</b>
+		</div>
+		 
+     </div>
+
+    <br><br>
+</body>
+</html>

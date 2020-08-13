@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my contacts</title>
+	<link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<style type="text/css">
+		
+		        *{
+    		margin: 0;
+    		padding: 0;
+    		list-style: none;
+    		text-decoration: none;
+    	
+    	}
+
+		       body{
+		       	     /* background-color: rgb(59, 53, 55);*/
+		       	     background-image: url("bg.jpg");
+		       	     background-size: cover;
+		       }
+
+		       	header{
+    		height: 90px;
+    		background-color:#fff;
+    		opacity: 0.5;
+    	}
+
+    	nav{
+    		height: 90px;
+    		background-color:#fff;
+    		opacity: 0.5;
+    	}
+    	nav img{
+    		width: 150px;
+    		position:absolute;
+    		top: 0px;
+    		left:12%;
+
+    	}
+    	nav .ul{
+    		float:right;
+    		margin-right: 25px;
+           
+    	}
+    	nav .ul li{
+    		display:inline-block;
+    		line-height: 89px;
+    		margin: 0 15px;
+
+    
+    	}
+
+    	nav .ul li a{
+    		position: relative;
+    		color:rgb(255, 51, 204);
+    		font-size: 18px;
+    		padding: 5px 0;
+    		text-transform: uppercase;
+    		
+            
+    	}
+
+    	
+    	nav .ul li a:hover{
+		color: black;
+		
+	}
+
+    	nav .ul li a:before{
+    		 position: absolute;
+    		 content: '';
+    		 left: 0;
+    		 bottom:0;
+    		 height: 3px;
+    		 width: 100%;
+    		 background:black;
+    		 transform: scaleX(0);
+    		 transform-origin: right;
+             transition: transform .4s linear
+    	}
+    	nav .ul li a:hover:before{
+                 transform:scaleX(1);
+                 transform-origin: left;
+    	} 
+    	label #btn,
+        label #cancel{
+   	    color: black;
+   	    font-size: 30px;
+   	    float: right;
+   	    line-height: 89px;
+   	    margin-right: 40px;
+   	    cursor: pointer;
+   	    display: none;
+
+   }
+     #check{
+   	  display: none;
+
+   }
+
+   @media (max-width: 1118px){
+   	   nav img {
+   	   	  left:8%;
+
+   	   }
+   }
+   @media (max-width: 944px){
+   	   nav img {
+   	   	  left:8%;
+   	   	  width: 130px;
+
+   	   }
+   	   nav .ul li a{
+   	   	  font-size: 17px;
+   	   }
+   }
+   
+   
+ 
+     @media (max-width: 860px){
+
+        
+     	 nav img {
+   	   	  left:6%;
+   	   	  width: 130px;
+
+   	   }
+   	   nav .ul li a{ 
+   	   	  font-size: 17px;
+   	   	  font-weight: 800;
+   	   }
+           label #btn{
+           	   display: block;
+
+           }
+            .ul{
+           	position: fixed;
+           	width:100%;
+            height: 100vh;
+             background : white;
+            opacity: 1;
+           	top: 80px;
+           	left: -100%;
+           	text-align: center;
+           	transition: all .5s;
+           	
+            
+
+
+           }
+           nav .ul li{
+           	   display: block;
+           	   margin:50px 0;
+           	   line-height: 30px;
+           }
+            nav .ul li a{
+           	   font-size: 1.2em;
+           }
+           #check:checked ~ ul{
+                  left: 0;
+           }
+           #check:checked ~ label #btn{
+           	    display: none;
+           }
+           #check:checked ~ label #cancel{
+           	  display: block;
+           }
+
+
+   }
+
+
+
+
+
+
+  	.insta{
+		    color: rgb(235, 52, 119);
+		   
+	}
+
+	.blue{
+		   color: blue;
+	}
+
+	.facebook{
+		       color: blue;
+	}
+
+	.email{
+		    color:red;
+	}
+
+	.google{
+		     color: white;
+	}
+
+	ul{
+		text-align: center;
+	}
+
+	.li{
+		 color: white;
+		 padding-top: 1em;
+	}
+
+	li a{
+		  text-decoration: none;
+		  color: white;
+	}
+
+
+	</style>
+</head>
+<body>
+   
+   <header>
+	<nav>
+		 <input type="checkbox" id="check">
+		 <label for="check">
+		 	<i class="fas fa-bars" id="btn"></i>
+		 	<i class="fas fa-times" id="cancel"></i>
+		 </label> 
+		 <img src="lgo.jpg" />
+
+		<ul class="ul">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="experiences.html">experiences</a></li>
+			<li><a href="interests.html">interest</a></li>
+			<li><a href="contact.html">contacts</a></li>
+		</ul>
+	</nav></header>
+	<br><br><br><br>
+      <ul >
+    <li class="li">	<a href="https://www.instagram.com/charvi2002"><i class="fab fa-instagram-square fa-spin fa-5x insta"></i>FOLLOW ME ON INSTAGRAM</a></li>
+    <li class="li">	<a href="https://www.facebook.com/charvi.jain.5494"><i class="fab fa-facebook fa-spin fa-5x facebook"></i>GET IN TOUCH WITH ME ON FACEBOOK</a></li>
+   
+    <li class="li">	<a href="https://www.linkedin.com/in/charvi-jain-3191241a4"><i class="fab fa-linkedin fa-spin fa-5x blue"></i>LOOKING FORWARD TO CONNECT ON LINKEDIN</a></li>
+    <li class="li">	<a href="https://www.google.com/"><i class="fab fa-google fa-spin fa-5x google"></i>GOOGLE LINK</a></li>
+   </ul>
+</body>
+</html>
